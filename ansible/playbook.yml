@@ -8,8 +8,3 @@
         src: "/var/snap/jenkins/4870/workspace/mavenansible/target/mvnAnsible.war"
         dest: "/opt/tomcat/webapps/mvnAnsible.war"
         remote_src: no
-
-    - name: Restart Tomcat
-      systemd:
-        name: tomcat
-        state: restarted
